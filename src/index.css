@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply  py-1 px-6 rounded-full text-base border-primary text-white transition-colors duration-500
+    }
+
+    .nav-links {
+        @apply text-base text-black font-medium hover:text-primary
+    }
+}
+
+
+:root {
+    --primary: #3498db;
+    --blue: #0d6efd;
+    --black: #222222;
+    --dark-gray: #555555;
+    --regular-gray: #484848;
+    --light-gray: #444444;
+    --white: #fff;
+
+    --width: 1280px;
+    --padding: 90px;
+}
+
+
+
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
